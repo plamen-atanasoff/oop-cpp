@@ -402,3 +402,6 @@ FodyWeavers.xsd
 *.vcxproj
 *.vcxproj.filters
 
+# Add .txt and .dat files
+*.txt
+*.dat
