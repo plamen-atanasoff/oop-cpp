@@ -33,6 +33,9 @@ Command getCommand(const char* command) {
 	if (strcmp(command, "cp") == 0) {
 		return Command::cp;
 	}
+	else if (strcmp(command, "report") == 0) {
+		return Command::report;
+	}
 	else {
 		throw std::invalid_argument("unknown enumerator name");
 	}

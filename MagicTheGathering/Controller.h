@@ -19,6 +19,7 @@ private:
 	static constexpr const char* PLAYERS_FILE_NAME = "players.dat";
 	static constexpr const char* CARDS_FILE_NAME = "cards.dat";
 	static constexpr const char* DECKS_FILE_NAME = "decks.dat";
+	static constexpr const char* PLAYERS_FILE_NAME_TXT = "players.txt";
 
 	static constexpr int FILE_NAME_MAX_SIZE = 32;
 };

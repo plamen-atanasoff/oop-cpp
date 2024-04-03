@@ -42,8 +42,12 @@ void Controller::execute(Command command) {
 
 		players.addPlayer(player);
 		players.printPlayers();
+		return;
 	}
-
+	case Command::report: {
+		players.writePlayersToFile(PLAYERS_FILE_NAME_TXT);
+		return;
+	}
 	}
 }
 

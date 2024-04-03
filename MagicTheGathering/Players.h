@@ -16,6 +16,7 @@ public:
 	void printPlayers() const;
 
 	void addPlayer(const Player& player);
+	void writePlayersToFile(const char* fileName);
 private:
 	void readPlayers();
 	void writePlayers();

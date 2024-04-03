@@ -55,6 +55,19 @@ void Players::addPlayer(const Player& player) {
 	players[size++] = player;
 }
 
+void Players::writePlayersToFile(const char* fileName) {
+	std::ofstream ofile(fileName);
+	if (!ofile.is_open()) {
+		throw std::exception("file could not be opened");
+	}
+
+	for (int i = 0; i < size; i++) {
+		ofile << players[i].id << ", " << players[i].name << '\n';
+	}
+
+	ofile.close();
+}
+
 void Players::readPlayers() {
 	std::ifstream ifile(fileName, std::ios::binary);
 	if (!ifile.is_open()) {

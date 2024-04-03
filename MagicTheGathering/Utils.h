@@ -17,6 +17,7 @@ struct Player {
 
 enum class Command {
 	cp,
+	report,
 
 	commandsCount
 };
